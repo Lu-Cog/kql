@@ -1,0 +1,310 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首頁",
+				"app-plus": {
+					"animationType": "fade-in",
+					"animationDuration": 300
+				}
+			}
+		}, {
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#FF9EC3",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"animationType": "fade-in",
+					"animationDuration": 300
+				}
+			}
+
+		}, {
+			"path": "pages/user/transfer",
+			"style": {
+				"navigationBarTitleText": "瓦幣會員轉贈",
+				"enablePullDownRefresh": false,
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#FF9EC3"
+			}
+
+		}, {
+			"path": "pages/user/success",
+			"style": {
+				"navigationBarTitleText": "瓦幣會員轉贈",
+				"enablePullDownRefresh": false,
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#FF9EC3"
+			}
+
+		}, {
+			"path": "pages/user/redEnvelopes",
+			"style": {
+				"navigationBarTitleText": "紅包三選一",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/residual/residual",
+			"style": {
+				"navigationBarTitleText": "餘氣撲滿",
+				"enablePullDownRefresh": false,
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#FF9EC3",
+				"app-plus": {
+					"animationType": "fade-in",
+					"animationDuration": 300
+				}
+			}
+
+		}, {
+			"path": "pages/residual/exchange",
+			"style": {
+				"navigationBarTitleText": "瓦幣兌換",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/distribution/distribution",
+			"style": {
+				"navigationBarTitleText": "配送服務",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/distribution/time",
+			"style": {
+				"navigationBarTitleText": "預約時間",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/distribution/coupon",
+			"style": {
+				"navigationBarTitleText": "優惠券",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/distribution/rules",
+			"style": {
+				"navigationBarTitleText": "使用規則",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/distribution/Information",
+			"style": {
+				"navigationBarTitleText": "訂單資訊",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/distribution/loading",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/distribution/order",
+			"style": {
+				"navigationBarTitleText": "您的訂單",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/distribution/consignee",
+			"style": {
+				"navigationBarTitleText": "常用收貨人資訊",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/distribution/addConsignee",
+			"style": {
+				"navigationBarTitleText": "新增收貨人",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/distribution/appointment",
+			"style": {
+				"navigationBarTitleText": "您的訂單",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/user/wacoin",
+			"style": {
+				"navigationBarTitleText": "我的瓦幣",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/user/memberBar",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+
+			}
+
+		}, {
+			"path": "pages/user/order",
+			"style": {
+				"navigationBarTitleText": "我的訂單",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/user/orderDetails",
+			"style": {
+				"navigationBarTitleText": "訂單詳情",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/user/myMembers",
+			"style": {
+				"navigationBarTitleText": "我的會員",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/user/notice",
+			"style": {
+				"navigationBarTitleText": "通知",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/user/noticeInfo",
+			"style": {
+				"navigationBarTitleText": "通知詳情",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/user/account",
+			"style": {
+				"navigationBarTitleText": "帳號設定",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/user/password",
+			"style": {
+				"navigationBarTitleText": "變更密碼",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/distribution/complete",
+			"style": {
+				"navigationBarTitleText": "完成訂單",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/index/latestNews",
+			"style": {
+				"navigationBarTitleText": "最新消息",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/index/productInformation",
+			"style": {
+				"navigationBarTitleText": "產品訊息",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/user/help",
+			"style": {
+				"navigationBarTitleText": "幫助中心",
+		 	"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/index/bind",
+			"style": {
+				"navigationBarTitleText": "綁定",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/index/webview",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/distribution/webView",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/index/pay",
+			"style": {
+				"navigationBarTitleText": "HOIN PAY 付款系統",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black"
+			}
+
+		}, {
+			"path": "pages/index/paySuccess",
+			"style": {
+				"navigationBarTitleText": "支付結果",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black"
+			}
+
+		}
+	],
+	"globalStyle": {
+		"navigationBarTitleText": "扛氣來",
+		"backgroundColor": "#F8F8F8",
+		"navigationBarTextStyle": "white",
+		"navigationBarBackgroundColor": "#FF9EC3",
+		"app-plus": {
+			"animationType": "fade-in",
+			"animationDuration": 300
+		}
+	}
+	// "tabBar": {
+	//     "color": "#fff",
+	//     "selectedColor": "#fff",
+	//     "borderStyle": "black",
+	//     "backgroundColor": "#FF9EC3",
+	//     "list": [{
+	//         "pagePath": "pages/index/index",
+	//         "iconPath": "/static/img/1132.png",
+	//         "selectedIconPath": "/static/img/11321.png",
+	//         "text": "首頁"
+	//     }, {
+	//         "pagePath": "pages/residual/residual",
+	//         "iconPath": "/static/img/1741.png",
+	//         "selectedIconPath": "/static/img/1673.png",
+	//         "text": "餘氣"
+	//     }, {
+	//         "pagePath": "pages/user/user",
+	//         "iconPath": "/static/img/4721.png",
+	//         "selectedIconPath": "/static/img/472.png",
+	//         "text": "我的"
+	//     }]
+	// }
+}

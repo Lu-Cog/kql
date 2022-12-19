@@ -1,0 +1,99 @@
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.footer .top {
+  text-align: right;
+  background-color: #fff;
+  font-size: 30rpx;
+  padding: 16rpx 28rpx;
+}
+.footer .top text {
+  color: #FF9EC3;
+}
+.footer .top text:first-child {
+  color: #707070;
+}
+.footer navigator {
+  text-align: center;
+  padding: 20rpx;
+  color: #fff;
+  background-color: #FF9EC3;
+}
+.search {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 32rpx;
+  background-color: #fff;
+}
+.search input {
+  background-color: #F3F3F3;
+  padding: 20rpx 40rpx;
+  flex: 1;
+  height: 100%;
+}
+.search .button {
+  display: flex;
+  justify-content: center;
+  /*实现水平居中*/
+  align-items: center;
+  /*实现垂直居中*/
+  margin-left: 8rpx;
+  background-color: #C4C4C4;
+  padding: 0rpx 24rpx;
+}
+.main {
+  height: 85vh;
+  background-color: #F3F3F3;
+}
+.main .select {
+  text-align: right;
+  font-size: 32rpx;
+  color: #707070;
+  padding: 40rpx 30rpx 10rpx;
+}
+.item {
+  display: flex;
+  align-items: center;
+  padding: 10rpx 20rpx;
+}
+.item image {
+  height: 180rpx;
+  width: 200rpx;
+}
+.item .right {
+  height: 180rpx;
+  box-sizing: border-box;
+  padding: 42rpx 46rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-color: #fff;
+  flex: 1;
+}
+.item .right .right_r {
+  display: flex;
+  flex-direction: column;
+}
+.item .right .right_r text {
+  color: #C4C4C4;
+  font-size: 30rpx;
+}
+.item .right .right_r text:first-child {
+  font-size: 38rpx;
+  margin-bottom: 10rpx;
+}
+.item .right image {
+  width: 46rpx;
+  height: 46rpx;
+}
+.item .right .rules {
+  color: #C4C4C4;
+  position: absolute;
+  bottom: 20rpx;
+  right: 24rpx;
+  font-size: 30rpx;
+}
+

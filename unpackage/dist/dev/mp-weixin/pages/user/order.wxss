@@ -1,0 +1,70 @@
+.taber {
+  display: flex;
+  justify-content: space-around;
+  padding: 40rpx 140rpx;
+  color: #505050;
+}
+.taber view {
+  padding: 10rpx;
+}
+.taber .active {
+  color: #FF85B4;
+  border-bottom: 2px solid #FF85B4;
+}
+.main .no {
+  padding-top: 100rpx;
+  text-align: center;
+  color: #999999;
+}
+.main .left .item {
+  padding: 30rpx 60rpx;
+  font-size: 30rpx;
+  border-bottom: 2px solid #E5E5E5;
+}
+.main .left .item .top {
+  margin-bottom: 20rpx;
+}
+.main .right .search {
+  margin: 0 36rpx 20rpx;
+  position: relative;
+}
+.main .right .search input {
+  padding: 16rpx 28rpx;
+  border-radius: 20rpx;
+  background-color: #F1F1F1;
+}
+.main .right .search image {
+  position: absolute;
+  bottom: 20rpx;
+  right: 10rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.main .right .item {
+  padding: 20rpx 50rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #E5E5E5;
+}
+.main .right .item .item_l {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 30rpx;
+}
+.main .right .item .item_l text {
+  margin-bottom: 20rpx;
+}
+.main .right .item .item_r {
+  border-radius: 50%;
+  width: 140rpx;
+  height: 140rpx;
+  background-color: #C0C0C0;
+  text-align: center;
+  line-height: 140rpx;
+  color: #fff;
+  font-size: 40rpx;
+  font-weight: 600;
+}
+

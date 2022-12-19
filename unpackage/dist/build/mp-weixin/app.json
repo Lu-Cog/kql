@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/user",
+    "pages/user/transfer",
+    "pages/user/success",
+    "pages/residual/residual",
+    "pages/residual/exchange",
+    "pages/distribution/distribution",
+    "pages/distribution/time",
+    "pages/distribution/coupon",
+    "pages/distribution/rules",
+    "pages/distribution/Information",
+    "pages/distribution/loading",
+    "pages/distribution/order",
+    "pages/distribution/consignee",
+    "pages/distribution/addConsignee",
+    "pages/distribution/appointment",
+    "pages/user/wacoin",
+    "pages/user/memberBar",
+    "pages/user/order",
+    "pages/user/orderDetails",
+    "pages/user/myMembers",
+    "pages/user/notice",
+    "pages/user/noticeInfo",
+    "pages/user/account",
+    "pages/user/password",
+    "pages/distribution/complete",
+    "pages/index/latestNews",
+    "pages/index/productInformation",
+    "pages/user/help"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTitleText": "扛氣來",
+    "backgroundColor": "#F8F8F8",
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#FF9EC3"
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

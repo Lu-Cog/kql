@@ -1,0 +1,1 @@
+<view><view class="bgimg"><image src="{{articlelist.img_url}}" mode="widthFix"></image></view><view class="content"><view class="time">{{''+articlelist.create_time+''}}</view><view class="title"><text>{{''+articlelist.title+''}}</text></view><view class="contents"><rich-text nodes="{{articlelist.content}}"></rich-text></view></view></view>

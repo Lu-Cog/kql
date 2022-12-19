@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "帳號設定",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "dy-date-picker": "/components/dy-Date/dy-Date"
+  }
+}

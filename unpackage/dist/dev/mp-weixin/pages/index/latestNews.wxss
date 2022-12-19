@@ -1,0 +1,53 @@
+.taber {
+  display: flex;
+  justify-content: space-around;
+  padding: 40rpx 200rpx;
+  color: #505050;
+}
+.taber view {
+  padding: 10rpx;
+}
+.taber .active {
+  color: #FF85B4;
+  border-bottom: 2px solid #FF85B4;
+}
+.main .item {
+  padding: 30rpx;
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+}
+.main .item .item_left {
+  width: 300rpx;
+  height: 160rpx;
+  margin-right: 10rpx;
+}
+.main .item .item_left image {
+  width: 100%;
+  height: 100%;
+}
+.main .item .content {
+  margin: 10rpx 0;
+  color: #A1A1A1;
+}
+.main .item .time {
+  color: #FF5252;
+}
+.main .search {
+  margin: 0 36rpx 20rpx;
+  position: relative;
+}
+.main .search input {
+  padding: 16rpx 28rpx;
+  border-radius: 20rpx;
+  font-size: 30rpx;
+  background-color: #F1F1F1;
+}
+.main .search image {
+  position: absolute;
+  bottom: 20rpx;
+  right: 10rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+

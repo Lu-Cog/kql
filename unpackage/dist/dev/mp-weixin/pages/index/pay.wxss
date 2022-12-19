@@ -1,0 +1,159 @@
+.pay {
+  min-height: 100vh;
+  background: linear-gradient(#99BAA4, #779D6E);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20rpx;
+}
+.pay .paytitle {
+  background-color: #FEC104;
+  text-align: center;
+  padding: 20rpx;
+  width: 80%;
+  font-weight: 700;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+}
+.pay .payInput {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #fff;
+  border: 4rpx #AC8D21 solid;
+  width: 80%;
+  color: #AC8D21;
+  font-size: 48rpx;
+  font-weight: 700;
+  vertical-align: middle;
+  border-radius: 10rpx;
+  padding: 0 10rpx;
+  height: 90rpx;
+  margin-bottom: 20rpx;
+}
+.pay .numKey {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.pay .numKey .keyItem {
+  margin-bottom: 20rpx;
+  width: 30%;
+  border-radius: 10rpx;
+  box-shadow: 0 0 8rpx #88ACCD;
+  height: 100rpx;
+  font-size: 48rpx;
+  color: #88ACCD;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pay .wabi {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+.pay .wabi text {
+  color: #FF9EC3;
+  background-color: #F6EAB8;
+  border: 1px solid #FF9EC3;
+  border-radius: 10rpx;
+  height: 60rpx;
+  padding: 0 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pay .wabi input {
+  background-color: #fff;
+  width: 100rpx;
+  height: 60rpx;
+  border-radius: 10rpx;
+  margin: 0 10rpx;
+  text-align: right;
+  padding: 0 10rpx;
+}
+.pay .wabi button {
+  height: 60rpx;
+  background-color: #FFBA04;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.pay .payType {
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+.pay .payType text {
+  color: #FF9EC3;
+  background-color: #F6EAB8;
+  border: 1px solid #FF9EC3;
+  border-radius: 10rpx;
+  height: 60rpx;
+  padding: 0 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20rpx;
+}
+.pay .payType > picker {
+  width: 60%;
+  box-sizing: border-box;
+  border: 1px solid #A3A3A3;
+  padding: 20rpx 38rpx;
+  border-radius: 15rpx;
+  display: inline-block;
+  background-color: #fff;
+}
+.pay .payType > picker view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pay .payType > picker image {
+  margin-left: 10rpx;
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+}
+.pay .info {
+  width: 70%;
+  margin-top: 40rpx;
+}
+.pay .info ._p {
+  margin-bottom: 10rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pay .info ._p:last-child {
+  font-size: 40rpx;
+  font-weight: 700;
+  color: #FFBA04;
+}
+.pay .submit {
+  margin-top: 30rpx;
+  width: 200rpx;
+  height: 70rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFB535;
+}
+.pay .xieyi {
+  margin-top: 50rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "首頁",
+  "usingComponents": {
+    "uni-rate": "/uni_modules/uni-rate/components/uni-rate/uni-rate",
+    "uni-popup": "/uni_modules/uni-popup/components/uni-popup/uni-popup",
+    "tab-bar": "/components/jinjie-tabBar/jinjie-tabBar"
+  }
+}
