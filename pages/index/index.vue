@@ -184,9 +184,16 @@
 				}
 				memberAdd(data).then(res=>{
 					uni.hideLoading()
-					uni.navigateTo({
-						url:'../distribution/webView?url='+res.data.pay_url
-					})
+					if(this.paytype==9){
+						uni.sendNativeEvent('openBrower', {
+							linkUrl : res.data.pay_url
+						})
+					}else{
+						uni.navigateTo({
+							url:'../distribution/webView?url='+res.data.pay_url
+						})
+					}
+					
 				})
 			},
 			openF(){

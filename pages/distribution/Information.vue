@@ -92,7 +92,11 @@
 	export default {
 		data() {
 			return {
-				data: {},
+				data: {
+					gas:{
+						price:0
+					}
+				},
 				remnant: '',
 				payType:1,
 				money:''
@@ -100,6 +104,7 @@
 		},
 		onLoad(option) {
 			this.data = JSON.parse(decodeURIComponent(option.data))
+			console.log(this.data,'this.data');
 			if(this.data.freight){
 				if(this.data.wa_coin==1 || this.data.remnant==1){
 					this.money = Number(this.data.freight)*Number(this.data.pail_num)
@@ -143,9 +148,15 @@
 						})
 						gtpay({order_id:res.data.order_id}).then(res1=>{
 							uni.hideLoading()
-							uni.reLaunch({
-								url:'./webView?url='+res1.data.pay_url+'&type='+this.data.order_type+'&order_id='+res.data.order_id
-							})
+							if(this.data.gtpay_type==9){
+								uni.sendNativeEvent('openBrower', {
+									linkUrl : res1.data.pay_url
+								})
+							}else{
+								uni.reLaunch({
+									url:'./webView?url='+res1.data.pay_url+'&type='+this.data.order_type+'&order_id='+res.data.order_id
+								})
+							}
 						})
 					}
 					

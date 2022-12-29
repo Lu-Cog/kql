@@ -24,6 +24,10 @@
 						url:'/pages/user/memberBar'
 					})
 				}
+				uni.showToast({
+					title:arg,
+					icon:'none'
+				})
 				if (arg.token == "" || arg.token == undefined) {
 					if (uni.getStorageSync('token') == '' || uni.getStorageSync('token') == undefined) {
 						return uni.sendNativeEvent('loginOut', ret => {})

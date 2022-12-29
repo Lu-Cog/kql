@@ -154,7 +154,7 @@
 				</view>
 			</view>
 		</view>
-		<view class="tile" v-if="!bodyBj">
+		<!-- <view class="tile" v-if="!bodyBj">
 			<view class="img">
 				<image src="/static/img/1687.png" mode="widthFix"></image>
 			</view>
@@ -164,7 +164,7 @@
 				<image @click="checkend()" :src="check?'../../static/img/-1655.png':'../../static/img/1655.png'"
 					mode="widthFix"></image>
 			</view>
-		</view>
+		</view> -->
 		<view class="button">
 			<button type="default" @click="subOrder()">發送</button>
 		</view>
