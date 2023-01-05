@@ -223,6 +223,13 @@
                     "query": "",
                     "launchMode": "default",
                     "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/distribution/time",
+                    "query": "bodyBj=false",
+                    "launchMode": "default",
+                    "scene": null
                 }
             ]
         }

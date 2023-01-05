@@ -67,10 +67,12 @@
 			}
 		},
 		data() {
+			let tdate = new Date();
+			tdate.setTime(tdate.getTime()+24*60*60*1000);
 			return {
 				weektext: ['日', '一', '二', '三', '四', '五', '六'],
-				y: new Date().getFullYear(), // 年
-				m: new Date().getMonth() + 1, // 月
+				y: tdate.getFullYear(), // 年
+				m: tdate.getMonth() + 1, // 月
 				dates: [], // 当前月的日期数据
 				positionTop: 0,
 				monthOpen: true,
@@ -102,14 +104,15 @@
 			},
 			getToday() {
 				let date = new Date();
+				date.setTime(date.getTime()+24*60*60*1000);
 				let y = date.getFullYear();
-				let m = date.getMonth();
-				let d = date.getDate()+1;
+				let m = date.getMonth()+1;
+				let d = date.getDate();
 				let week = new Date().getDay();
 				let weekText = ['日', '一', '二', '三', '四', '五', '六'];
 				let formatWeek = '星期' + weekText[week];
 				let today = {
-					date: y + '-' + this.formatNum(m + 1) + '-' + this.formatNum(d),
+					date: y + '-' + this.formatNum(m) + '-' + this.formatNum(d),
 					week: formatWeek
 				};
 				return today;
@@ -237,6 +240,7 @@
 					date: date,
 					week: formatWeek
 				};
+				console.log(i);
 				if (!i.isCurM) {
 					// console.log('不在当前月范围内');
 					return false;
