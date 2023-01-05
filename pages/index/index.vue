@@ -27,7 +27,7 @@
 			</view>
 			<view class="vip">享有便利及更多會員回饋</view>
 			<view class="kg">重量看得見．安全又美觀．樓層不加價</view>
-			<view class="yq">餘氣可累積．預約抽紅包．分享賺代金</view>
+			<view class="yq">餘氣可累積．預約抽紅包．下單賺代金</view>
 		</view>
 
 		<view class="banner">

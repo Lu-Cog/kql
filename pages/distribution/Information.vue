@@ -105,15 +105,16 @@
 		onLoad(option) {
 			this.data = JSON.parse(decodeURIComponent(option.data))
 			console.log(this.data,'this.data');
-			if(this.data.freight){
-				if(this.data.wa_coin==1 || this.data.remnant==1){
-					this.money = Number(this.data.freight)*Number(this.data.pail_num)
-				}else{
-					this.money = Number(this.data.freight)*Number(this.data.pail_num)+Number(this.data.gas.price)*Number(this.data.pail_num)
-				}
+			if(this.data.wa_coin==1 || this.data.remnant==1){
+				this.money = Number(this.data.freight)*Number(this.data.pail_num)
 			}else{
 				this.money = Number(this.data.gas.price)*Number(this.data.pail_num)
 			}
+			// if(this.data.freight){
+				
+			// }else{
+			// 	this.money = Number(this.data.gas.price)*Number(this.data.pail_num)
+			// }
 			if (uni.getStorageSync('user_type') == 1) {
 				this.remnant = 15
 			} else {

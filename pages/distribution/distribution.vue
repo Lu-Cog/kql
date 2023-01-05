@@ -92,9 +92,10 @@
 					數量
 				</view>
 				<view class="num">
-					<text class="add" :class="{'hs':num==pail_num}" @click="add">+</text>
+					 <text class="add" :class="{'hs':num==1}" @click="sub">-</text>
 					<text>{{num}}</text>
-					<text class="add" :class="{'hs':num==1}" @click="sub">-</text>
+					<!-- :class="{'hs':num==pail_num}" -->
+					<text class="add" @click="add">+</text>
 				</view>
 			</view>
 			<view class="model item">
@@ -141,7 +142,7 @@
 				<view class="head">
 					留言給配送員
 				</view>
-				<textarea v-model="message"  placeholder="告知配送員您的需求或者註意事項" />
+				<textarea v-model="message"  placeholder="告知配送員您的需求或者注意事項" />
 			</view>
 		</view>
 		<view class="coupon" v-if="false">
@@ -265,9 +266,10 @@
 				})
 			},
 			add() {
-				if (this.pail_num > this.num) {
-					this.num++
-				}
+				this.num++
+				// if (this.pail_num > this.num) {
+					
+				// }
 			},
 			sub() {
 				if (this.num > 1) {
@@ -310,10 +312,10 @@
 					if (this.bodyBj) {
 						this.freight = res.data.remnant_freight
 					}
-					// if (this.check) {
-					// 	this.freight = res.data.freight
-					// }
-					this.freight = res.data.freight
+					if (this.check) {
+						this.freight = res.data.freight
+					}
+					// this.freight = res.data.freight
 					this.userOrderCount = res.data.userOrderCount
 					if (this.user_type == 1) {
 						this.gas.push(res.data.gas_one)

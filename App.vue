@@ -17,17 +17,14 @@
 			// this.globalData.shop_name = option.referrerInfo.extraData.shop_name
 			console.log('App Show')
 			try {
-				var arg = JSON.parse(plus.runtime.arguments);
-				// var arg = {"token":"f777e57627ee07c14d59e64e1851443c"}
+				// var arg = JSON.parse(plus.runtime.arguments);
+				var arg = {"token":"a58a5d0b75edcfdaf12e2d305bdb2e90"}
 				if(arg.type==11){
 					uni.navigateTo({
 						url:'/pages/user/memberBar'
 					})
 				}
-				uni.showToast({
-					title:arg,
-					icon:'none'
-				})
+				
 				if (arg.token == "" || arg.token == undefined) {
 					if (uni.getStorageSync('token') == '' || uni.getStorageSync('token') == undefined) {
 						return uni.sendNativeEvent('loginOut', ret => {})
