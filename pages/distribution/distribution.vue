@@ -132,7 +132,7 @@
 					</view>
 				</picker> -->
 				<radio-group @change="radioChange" class="radiogroup">
-					<label class="lable" v-for="(item, index) in paylist" :key="item.name">
+					<label class="lable" v-for="(item,index) in paylist" :key="item.name">
 						<radio :value="item.type" />
 						<view>{{item.name}}</view>
 					</label>
