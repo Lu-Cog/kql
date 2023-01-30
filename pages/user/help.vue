@@ -8,7 +8,7 @@
 				<text class="content-box-text">03 853 5118</text>
 			</uni-card>
 			<uni-card title="客服郵箱" isShadow>
-				<text class="content-box-text">love200452001@gmail.com</text>
+				<text class="content-box-text">kql2021888@gmail.com</text>
 			</uni-card>
 			<uni-card title="服務時間" isShadow>
 				<text class="content-box-text">周一~周五10:00~18:00</text>

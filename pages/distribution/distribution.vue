@@ -92,10 +92,10 @@
 					數量
 				</view>
 				<view class="num">
-					 <text class="add" :class="{'hs':num==1}" @click="sub">-</text>
+					<text class="add" :class="{'hs':num==1}" @click="sub">-</text>
 					<text>{{num}}</text>
 					<!-- :class="{'hs':num==pail_num}" -->
-					<text class="add" @click="add">+</text>
+					<text class="add" :class="{'hs':num==pail_num}" @click="add">+</text>
 				</view>
 			</view>
 			<view class="model item">
@@ -266,10 +266,10 @@
 				})
 			},
 			add() {
-				this.num++
-				// if (this.pail_num > this.num) {
-					
-				// }
+				
+				if (this.pail_num > this.num) {
+					this.num++
+				}
 			},
 			sub() {
 				if (this.num > 1) {
@@ -449,9 +449,10 @@
 						icon: 'none'
 					})
 				}
-				if (!this.telephone) {
+				let reg = /^(09\d{8})$/
+				if (!reg.test(this.telephone)) {
 					return uni.showToast({
-						title: '請輸入電話號碼',
+						title: '請輸入正確電話號碼',
 						icon: 'none'
 					})
 				}

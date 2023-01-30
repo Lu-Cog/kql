@@ -1,3 +1,10 @@
+.callTip {
+  margin: 20rpx 0;
+}
+.callTip text {
+  color: #FF9EC3;
+  text-decoration: underline;
+}
 .uni-popup__wrapper {
   width: 90%;
   height: 90vh;

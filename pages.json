@@ -274,7 +274,16 @@
 			}
 
 		}
-	],
+	    ,{
+            "path" : "pages/user/cancellation",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "申請帳號刪除",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTitleText": "扛氣來",
 		"backgroundColor": "#F8F8F8",

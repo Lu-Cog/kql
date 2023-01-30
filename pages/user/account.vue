@@ -105,20 +105,9 @@
 		// },
 		methods: {
 			cancelNo(){
-				uni.showModal({
-					title: '提示',
-					content: '是否確認註銷帳號？註銷后不可恢復！',
-					success: function(res) {
-						if (res.confirm) {
-							cancelNo({}).then(res=>{
-								uni.clearStorageSync();
-								uni.sendNativeEvent('loginOut')
-							})
-						} else if (res.cancel) {
-							console.log('用户点击取消');
-						}
-					}
-				});
+				uni.navigateTo({
+					url:'/pages/user/cancellation?wa_coin='+this.userInfo.wa_coin+'&remnant='+this.userInfo.remnant
+				})
 			},
 			getUserInfo() {
 				let data = {
