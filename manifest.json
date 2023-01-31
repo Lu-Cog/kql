@@ -2,8 +2,8 @@
     "name" : "扛氣來",
     "appid" : "__UNI__E3A23D7",
     "description" : "",
-    "versionName" : "4.1.3",
-    "versionCode" : 413,
+    "versionName" : "4.1.6",
+    "versionCode" : 416,
     "transformPx" : false,
     /* 5+App特有相关 */
     "app-plus" : {
@@ -52,7 +52,13 @@
             },
             /* SDK配置 */
             "sdkConfigs" : {
-                "ad" : {}
+                "ad" : {},
+                "maps" : {
+                    "google" : {
+                        "APIKey_ios" : "",
+                        "APIKey_android" : ""
+                    }
+                }
             },
             "splashscreen" : {
                 "androidStyle" : "common"

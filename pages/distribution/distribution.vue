@@ -155,7 +155,7 @@
 				</view>
 			</view>
 		</view>
-		<!-- <view class="tile" v-if="!bodyBj">
+		<view class="tile" v-if="!bodyBj && wa_coin_config==1">
 			<view class="img">
 				<image src="/static/img/1687.png" mode="widthFix"></image>
 			</view>
@@ -165,7 +165,7 @@
 				<image @click="checkend()" :src="check?'../../static/img/-1655.png':'../../static/img/1655.png'"
 					mode="widthFix"></image>
 			</view>
-		</view> -->
+		</view>
 		<view class="button">
 			<button type="default" @click="subOrder()">發送</button>
 		</view>
@@ -242,6 +242,7 @@
 				paytype:'',
 				gasName:'',
 				gasPrice:'',
+				wa_coin_config: 0
 			};
 		},
 		methods: {
@@ -326,12 +327,11 @@
 					this.gasName = this.gas[this.index2].name
 					this.gasPrice = this.gas[this.index2].price
 					this.paylist = res.data.gtpay_type
+					this.wa_coin_config = res.data.wa_coin_config
 				})
 			},
 			getDefaultAddress() {
-				let data = {
-
-				}
+				let data = {}
 				getDefaultAddress(data).then(res => {
 					if (!res.data) return
 					this.address = res.data.address

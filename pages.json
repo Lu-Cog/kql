@@ -283,6 +283,15 @@
             }
             
         }
+        ,{
+            "path" : "pages/index/tyShop",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTitleText": "扛氣來",

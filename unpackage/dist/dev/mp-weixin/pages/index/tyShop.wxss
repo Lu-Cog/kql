@@ -1,0 +1,72 @@
+.pages {
+  background-color: #FF9EC3;
+  min-height: 100vh;
+}
+.pages .home {
+  width: 100%;
+  position: relative;
+}
+.pages .home image {
+  width: 100%;
+  display: block;
+}
+.pages .home .home_c {
+  position: absolute;
+  bottom: 50rpx;
+  left: 90rpx;
+  right: 90rpx;
+}
+.pages .home .home_c .title {
+  padding: 30rpx;
+}
+.pages .home .home_c .btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pages .home .home_c .btn .btn_item {
+  border-radius: 60rpx;
+  background-color: #FFE699;
+  color: #D4410E;
+  padding: 6rpx;
+  width: 46%;
+  font-size: 28rpx;
+  text-align: center;
+}
+.pages .main {
+  margin: 0 60rpx;
+  background-color: #fff;
+  min-height: 70vh;
+  padding: 20rpx;
+}
+.pages .main input {
+  border-radius: 20rpx;
+  background-color: #eee;
+  padding: 0 20rpx;
+  height: 70rpx;
+  margin-bottom: 20rpx;
+}
+.pages .main .item {
+  border-bottom: 1px solid #FF9EC3;
+  padding: 20rpx;
+}
+.pages .main .item .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  font-size: 30rpx;
+  margin-bottom: 10rpx;
+}
+.pages .main .item .head .phone {
+  white-space: nowrap;
+}
+.pages .main .item .address {
+  font-size: 28rpx;
+}
+.pages .main .no {
+  margin-top: 200rpx;
+  text-align: center;
+  color: #999;
+}
+

@@ -237,6 +237,13 @@
           "query": "wa_coin=1120&remnant=994",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/index/tyShop",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }
