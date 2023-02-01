@@ -39,12 +39,23 @@
   min-height: 70vh;
   padding: 20rpx;
 }
-.pages .main input {
+.pages .main .search {
+  position: relative;
   border-radius: 20rpx;
   background-color: #eee;
-  padding: 0 20rpx;
-  height: 70rpx;
   margin-bottom: 20rpx;
+}
+.pages .main .search image {
+  position: absolute;
+  right: 20rpx;
+  top: 10%;
+  width: 50rpx;
+  height: 50rpx;
+}
+.pages .main input {
+  padding: 0 20rpx;
+  margin-right: 70rpx;
+  height: 70rpx;
 }
 .pages .main .item {
   border-bottom: 1px solid #FF9EC3;

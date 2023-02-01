@@ -15,7 +15,10 @@
 			</view>
 		</view>
 		<view class="main">
-			<input type="text" v-model="key" placeholder="輸入店家關鍵字搜索" @confirm='guestshops' confirm-type='done'>
+			<view class="search">
+				<input type="text" v-model="key" placeholder="輸入店家關鍵字搜索" @confirm='guestshops' confirm-type='done'>
+				<image src="../../static/img/ss.png" mode="widthFix" @click="guestshops"></image>
+			</view>
 			<view class="no" v-if="list.length<=0">
 				暫無店家
 			</view>
@@ -53,7 +56,9 @@
 		},
 		methods: {
 			joinTy() {
-
+				uni.navigateTo({
+					url:'/pages/index/webviewTy'
+				})
 			},
 			lookMore() {
 				uni.sendNativeEvent('lookMore', ret => {})
@@ -65,13 +70,13 @@
 			},
 			openAddress(item) {
 				uni.sendNativeEvent('openMap', {
-					latitude: item.lag,
+					latitude: item.lat,
 					longitude: item.lon,
 					name: item.title,
 					address: item.address,
 				})
 				// uni.openLocation({
-				// 	latitude: item.lag,
+				// 	latitude: item.lat,
 				// 	longitude: item.lon,
 				// 	name:item.title,
 				// 	address:item.address,
@@ -81,9 +86,13 @@
 				// });
 			},
 			guestshops() {
+				uni.showLoading({
+					title:'加載中...'
+				})
 				guestshops({
 					keyword: this.key
 				}).then(res => {
+					uni.hideLoading()
 					this.list = res.data
 				})
 			}
@@ -138,13 +147,23 @@
 			background-color: #fff;
 			min-height: 70vh;
 			padding: 20rpx;
-
-			input {
+			.search{
+				position: relative;
 				border-radius: 20rpx;
 				background-color: #eee;
-				padding: 0 20rpx;
-				height: 70rpx;
 				margin-bottom: 20rpx;
+				image{
+					position: absolute;
+					right: 20rpx;
+					top: 10%;
+					width: 50rpx;
+					height: 50rpx;
+				}
+			}
+			input {
+				padding: 0 20rpx;
+				margin-right: 70rpx;
+				height: 70rpx;
 			}
 
 			.item {

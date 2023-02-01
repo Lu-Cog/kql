@@ -292,6 +292,15 @@
             }
             
         }
+        ,{
+            "path" : "pages/index/webviewTy",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTitleText": "扛氣來",
