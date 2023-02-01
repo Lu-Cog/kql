@@ -35,9 +35,9 @@
 				<swiper-item>
 					<image src="/static/img/517.png" mode=""></image>
 				</swiper-item>
-				<swiper-item>
+				<!-- <swiper-item>
 					<image src="/static/img/tyshop.png" mode="" @click="goTyShop"></image>
-				</swiper-item>
+				</swiper-item> -->
 				<!-- <swiper-item>
 					<image src="/static/img/0.png" mode="" @click="openF"></image>
 				</swiper-item> -->
