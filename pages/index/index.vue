@@ -285,9 +285,9 @@
 					}
 					let myDate = new Date();
 					//获取当前小时数(0-23)
-					if(myDate.getHours()<8 || myDate.getHours()>=21){
+					if(myDate.getHours()<8 || myDate.getHours()>=20){
 						return uni.showToast({
-							title:'即時單配送時間為08：00~21：00~若已過營業時間，請改預約明日下單，謝謝',
+							title:'即時單配送時間為08：00~20：00~若已過營業時間，請改預約明日下單，謝謝',
 							icon:'none'
 						})
 					}

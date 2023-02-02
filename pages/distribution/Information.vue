@@ -62,7 +62,7 @@
 				<text>數量</text><text>(X {{Number(data.pail_num)}})</text>
 			</view>
 			<view v-if="data.remnant==1">
-				<text>餘氣兌換（{{remnant*Number(data.pail_num)}}kg）</text><text>(＄-{{Number(data.gas.price)*Number(data.pail_num)}}元)</text>
+				<text>餘氣兌換</text><text>(＄-{{Number(data.gas.price)*Number(data.pail_num)}}元)</text>
 			</view>
 			<view v-if="data.wa_coin==1">
 				<text>瓦幣</text><text>(＄-{{Number(data.gas.price)*Number(data.pail_num)}}元)</text>
