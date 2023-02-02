@@ -274,7 +274,34 @@
 			}
 
 		}
-	],
+	    ,{
+            "path" : "pages/user/cancellation",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "申請帳號刪除",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/tyShop",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/webviewTy",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTitleText": "扛氣來",
 		"backgroundColor": "#F8F8F8",

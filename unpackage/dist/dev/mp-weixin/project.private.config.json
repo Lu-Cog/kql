@@ -1,239 +1,253 @@
 {
-    "setting": {
-        "compileHotReLoad": true
-    },
-    "condition": {
-        "miniprogram": {
-            "list": [
-                {
-                    "name": "pages/user/user",
-                    "pathName": "pages/user/user",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "pages/user/transfer",
-                    "pathName": "pages/user/transfer",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "pages/user/success",
-                    "pathName": "pages/user/success",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "pages/residual/residual",
-                    "pathName": "pages/residual/residual",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "pages/residual/exchange",
-                    "pathName": "pages/residual/exchange",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "pages/distribution/distribution",
-                    "pathName": "pages/distribution/distribution",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "pages/distribution/time",
-                    "pathName": "pages/distribution/time",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "pages/distribution/coupon",
-                    "pathName": "pages/distribution/coupon",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "pages/distribution/rules",
-                    "pathName": "pages/distribution/rules",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "pages/distribution/Information",
-                    "pathName": "pages/distribution/Information",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "pages/distribution/loading",
-                    "pathName": "pages/distribution/loading",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "pages/distribution/order",
-                    "pathName": "pages/distribution/order",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "pages/distribution/consignee",
-                    "pathName": "pages/distribution/consignee",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "pages/distribution/complete",
-                    "pathName": "pages/distribution/complete",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "pages/user/memberBar",
-                    "pathName": "pages/user/memberBar",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "pages/user/order",
-                    "pathName": "pages/user/order",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "pages/user/orderDetails",
-                    "pathName": "pages/user/orderDetails",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "pages/user/myMembers",
-                    "pathName": "pages/user/myMembers",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "pages/user/notice",
-                    "pathName": "pages/user/notice",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "pages/user/account",
-                    "pathName": "pages/user/account",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "pages/user/password",
-                    "pathName": "pages/user/password",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "pages/index/latestNews",
-                    "pathName": "pages/index/latestNews",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "pages/index/productInformation",
-                    "pathName": "pages/index/productInformation",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "pages/user/notice",
-                    "pathName": "pages/user/notice",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "pages/user/redEnvelopes",
-                    "pathName": "pages/user/redEnvelopes",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "pages/distribution/time",
-                    "pathName": "pages/distribution/time",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "",
-                    "pathName": "pages/distribution/Information",
-                    "query": "data=%7B%22freight%22%3A%22%22%2C%22gas%22%3A%7B%22name%22%3A%22%E8%A4%87%E5%90%88%E5%BC%8F%2015kg%20%E7%93%A6%E6%96%AF%22%2C%22price%22%3A%22600.00%22%7D%2C%22allAddress%22%3A%22%E8%8A%B1%E8%93%AE%E7%B8%A3%E8%8A%B1%E8%93%AE%E5%B8%8221%22%2C%22address_id%22%3A%22%22%2C%22order_type%22%3A%222%22%2C%22name%22%3A%222%22%2C%22telephone%22%3A%22213%22%2C%22address%22%3A%2221%22%2C%22message%22%3A%22213%22%2C%22wa_coin%22%3A0%2C%22remnant%22%3A0%2C%22city_id%22%3A18%2C%22country_id%22%3A350%2C%22pre_date%22%3A%222022-03-17%22%2C%22pre_hour%22%3A%2213%3A00~14%3A00%22%2C%22token%22%3A%228a6166bc9a13b3616c36125a806660ae%22%2C%22keep_address%22%3A0%2C%22pail_num%22%3A1%7D",
-                    "launchMode": "default",
-                    "scene": null
-                },
-                {
-                    "name": "",
-                    "pathName": "pages/index/bind",
-                    "query": "",
-                    "launchMode": "default",
-                    "scene": null
-                },
-                {
-                    "name": "",
-                    "pathName": "pages/distribution/appointment",
-                    "query": "",
-                    "launchMode": "default",
-                    "scene": null
-                },
-                {
-                    "name": "",
-                    "pathName": "pages/distribution/order",
-                    "query": "",
-                    "launchMode": "default",
-                    "scene": null
-                },
-                {
-                    "name": "",
-                    "pathName": "pages/distribution/distribution",
-                    "query": "active=1",
-                    "launchMode": "default",
-                    "scene": null
-                },
-                {
-                    "name": "",
-                    "pathName": "pages/index/paySuccess",
-                    "query": "",
-                    "launchMode": "default",
-                    "scene": null
-                },
-                {
-                    "name": "",
-                    "pathName": "pages/index/pay",
-                    "query": "shop_id=AD220810gK&shop_name=瀧萱坊",
-                    "launchMode": "default",
-                    "scene": null
-                },
-                {
-                    "name": "",
-                    "pathName": "pages/index/paySuccess",
-                    "query": "",
-                    "launchMode": "default",
-                    "scene": null
-                },
-                {
-                    "name": "",
-                    "pathName": "pages/user/user",
-                    "query": "",
-                    "launchMode": "default",
-                    "scene": null
-                },
-                {
-                    "name": "",
-                    "pathName": "pages/distribution/time",
-                    "query": "bodyBj=false",
-                    "launchMode": "default",
-                    "scene": null
-                }
-            ]
+  "setting": {
+    "compileHotReLoad": true
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/user/user",
+          "pathName": "pages/user/user",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user/transfer",
+          "pathName": "pages/user/transfer",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user/success",
+          "pathName": "pages/user/success",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/residual/residual",
+          "pathName": "pages/residual/residual",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/residual/exchange",
+          "pathName": "pages/residual/exchange",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/distribution/distribution",
+          "pathName": "pages/distribution/distribution",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/distribution/time",
+          "pathName": "pages/distribution/time",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/distribution/coupon",
+          "pathName": "pages/distribution/coupon",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/distribution/rules",
+          "pathName": "pages/distribution/rules",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/distribution/Information",
+          "pathName": "pages/distribution/Information",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/distribution/loading",
+          "pathName": "pages/distribution/loading",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/distribution/order",
+          "pathName": "pages/distribution/order",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/distribution/consignee",
+          "pathName": "pages/distribution/consignee",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/distribution/complete",
+          "pathName": "pages/distribution/complete",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user/memberBar",
+          "pathName": "pages/user/memberBar",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user/order",
+          "pathName": "pages/user/order",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user/orderDetails",
+          "pathName": "pages/user/orderDetails",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user/myMembers",
+          "pathName": "pages/user/myMembers",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user/notice",
+          "pathName": "pages/user/notice",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user/account",
+          "pathName": "pages/user/account",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user/password",
+          "pathName": "pages/user/password",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/latestNews",
+          "pathName": "pages/index/latestNews",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/productInformation",
+          "pathName": "pages/index/productInformation",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user/notice",
+          "pathName": "pages/user/notice",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user/redEnvelopes",
+          "pathName": "pages/user/redEnvelopes",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/distribution/time",
+          "pathName": "pages/distribution/time",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/distribution/Information",
+          "query": "data=%7B%22freight%22%3A%22%22%2C%22gas%22%3A%7B%22name%22%3A%22%E8%A4%87%E5%90%88%E5%BC%8F%2015kg%20%E7%93%A6%E6%96%AF%22%2C%22price%22%3A%22600.00%22%7D%2C%22allAddress%22%3A%22%E8%8A%B1%E8%93%AE%E7%B8%A3%E8%8A%B1%E8%93%AE%E5%B8%8221%22%2C%22address_id%22%3A%22%22%2C%22order_type%22%3A%222%22%2C%22name%22%3A%222%22%2C%22telephone%22%3A%22213%22%2C%22address%22%3A%2221%22%2C%22message%22%3A%22213%22%2C%22wa_coin%22%3A0%2C%22remnant%22%3A0%2C%22city_id%22%3A18%2C%22country_id%22%3A350%2C%22pre_date%22%3A%222022-03-17%22%2C%22pre_hour%22%3A%2213%3A00~14%3A00%22%2C%22token%22%3A%228a6166bc9a13b3616c36125a806660ae%22%2C%22keep_address%22%3A0%2C%22pail_num%22%3A1%7D",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/index/bind",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/distribution/appointment",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/distribution/order",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/distribution/distribution",
+          "query": "active=1",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/index/paySuccess",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/index/pay",
+          "query": "shop_id=AD220810gK&shop_name=瀧萱坊",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/index/paySuccess",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/user/user",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/user/cancellation",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/user/cancellation",
+          "query": "wa_coin=1120&remnant=994",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/index/tyShop",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
-    },
-    "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
-    "projectname": "扛氣來"
+      ]
+    }
+  },
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "projectname": "扛氣來"
 }

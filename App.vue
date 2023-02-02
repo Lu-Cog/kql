@@ -18,12 +18,13 @@
 			console.log('App Show')
 			try {
 				var arg = JSON.parse(plus.runtime.arguments);
-				// var arg = {"token":"25aba8bc0351888b303377cc2226a1d7"}
+				// var arg = {"token":"f777e57627ee07c14d59e64e1851443c"}
 				if(arg.type==11){
 					uni.navigateTo({
 						url:'/pages/user/memberBar'
 					})
 				}
+				
 				if (arg.token == "" || arg.token == undefined) {
 					if (uni.getStorageSync('token') == '' || uni.getStorageSync('token') == undefined) {
 						return uni.sendNativeEvent('loginOut', ret => {})

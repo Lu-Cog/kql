@@ -23,7 +23,7 @@
 					</view>
 					<view class="item_bottom">
 						<text>{{item.add_time}}</text>
-						<text>{{Number(item.wa_coin)}}</text>
+						<text>{{item.wa_coin}}</text>
 					</view>
 				</view>
 				

@@ -4,13 +4,13 @@
 			<text>Email*</text>
 			<input type="text" v-model="accountName" placeholder="請輸入郵箱" />
 		</view>
-		<!-- <view class="item">
+		<view class="item">
 			<text>驗證碼*</text>
 			<view class="yzm">
 				<input type="text" v-model="code" placeholder="請輸入驗證碼" />
 				<button type="default" @click="sendYzm" :disabled="disabled">{{text}}</button>
 			</view>
-		</view> -->
+		</view>
 		<view class="item">
 			<text>密碼*</text>
 			<input type="password" v-model="password" placeholder="請輸入密碼" />
@@ -30,6 +30,9 @@
 					<radio value="2" color='#FF9EC3' />商業用戶
 				</label>
 			</radio-group>
+		</view>
+		<view class="callTip">
+			※若註冊流程有任何問題,請聯繫客服｡客服專線：<text @click="call">03 853 5118</text>
 		</view>
 		<button class="btn" hover-class="none" type="default" @click="sub">確認綁定</button>
 		<uni-popup ref="popup" :mask-click="false" background-color="#fff">
@@ -81,6 +84,11 @@
 
 		},
 		methods: {
+			call(){
+				uni.makePhoneCall({
+					phoneNumber:'03 853 5118'
+				})
+			},
 			scrolltolower(e){
 				this.check = true
 			},
@@ -147,12 +155,12 @@
 						icon: 'none'
 					})
 				}
-				// if (!this.code) {
-				// 	return uni.showToast({
-				// 		title: '請輸入驗證碼',
-				// 		icon: 'none'
-				// 	})
-				// }
+				if (!this.code) {
+					return uni.showToast({
+						title: '請輸入驗證碼',
+						icon: 'none'
+					})
+				}
 				if (this.password.length < 8 || this.password.length > 20) {
 					return uni.showToast({
 						title: '請輸入正確的密碼',
@@ -189,6 +197,13 @@
 </script>
 
 <style lang="less">
+	.callTip{
+		margin: 20rpx 0;
+		text{
+			color: #FF9EC3;
+			text-decoration: underline;
+		}
+	}
 	.uni-popup__wrapper {
 		width: 90%;
 		height: 90vh;

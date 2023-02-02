@@ -34,7 +34,10 @@
     "pages/index/webview",
     "pages/distribution/webView",
     "pages/index/pay",
-    "pages/index/paySuccess"
+    "pages/index/paySuccess",
+    "pages/user/cancellation",
+    "pages/index/tyShop",
+    "pages/index/webviewTy"
   ],
   "subPackages": [],
   "window": {

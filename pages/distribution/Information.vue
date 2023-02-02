@@ -62,7 +62,7 @@
 				<text>數量</text><text>(X {{Number(data.pail_num)}})</text>
 			</view>
 			<view v-if="data.remnant==1">
-				<text>餘氣兌換（{{remnant*Number(data.pail_num)}}kg）</text><text>(＄-{{Number(data.gas.price)*Number(data.pail_num)}}元)</text>
+				<text>餘氣兌換</text><text>(＄-{{Number(data.gas.price)*Number(data.pail_num)}}元)</text>
 			</view>
 			<view v-if="data.wa_coin==1">
 				<text>瓦幣</text><text>(＄-{{Number(data.gas.price)*Number(data.pail_num)}}元)</text>
@@ -92,7 +92,11 @@
 	export default {
 		data() {
 			return {
-				data: {},
+				data: {
+					gas:{
+						price:0
+					}
+				},
 				remnant: '',
 				payType:1,
 				money:''
@@ -100,15 +104,17 @@
 		},
 		onLoad(option) {
 			this.data = JSON.parse(decodeURIComponent(option.data))
-			if(this.data.freight){
-				if(this.data.wa_coin==1 || this.data.remnant==1){
-					this.money = Number(this.data.freight)*Number(this.data.pail_num)
-				}else{
-					this.money = Number(this.data.freight)*Number(this.data.pail_num)+Number(this.data.gas.price)*Number(this.data.pail_num)
-				}
+			console.log(this.data,'this.data');
+			if(this.data.wa_coin==1 || this.data.remnant==1){
+				this.money = Number(this.data.freight)*Number(this.data.pail_num)
 			}else{
 				this.money = Number(this.data.gas.price)*Number(this.data.pail_num)
 			}
+			// if(this.data.freight){
+				
+			// }else{
+			// 	this.money = Number(this.data.gas.price)*Number(this.data.pail_num)
+			// }
 			if (uni.getStorageSync('user_type') == 1) {
 				this.remnant = 15
 			} else {
@@ -143,9 +149,15 @@
 						})
 						gtpay({order_id:res.data.order_id}).then(res1=>{
 							uni.hideLoading()
-							uni.reLaunch({
-								url:'./webView?url='+res1.data.pay_url+'&type='+this.data.order_type+'&order_id='+res.data.order_id
-							})
+							if(this.data.gtpay_type==9){
+								uni.sendNativeEvent('openBrower', {
+									linkUrl : res1.data.pay_url
+								})
+							}else{
+								uni.reLaunch({
+									url:'./webView?url='+res1.data.pay_url+'&type='+this.data.order_type+'&order_id='+res.data.order_id
+								})
+							}
 						})
 					}
 					

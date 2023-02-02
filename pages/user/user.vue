@@ -4,15 +4,15 @@
 			<view class="top"></view>
 			<view class="head">
 				<view class="headImg">
-					<image v-if="userInfo.clean_time" src="../../static/vip.png" mode="widthFix" class="vip"></image>
+					<!-- <image v-if="userInfo.clean_time" src="../../static/vip.png" mode="widthFix" class="vip"></image> -->
 					<image :src="userInfo.avatar?userInfo.avatar:'../../static/img/1612.png'" mode=""
 						@click="uploadImageOne()"></image>
 				</view>
 				<view class="center" v-if="userInfo.userId">
 					<view class="name">Hi，{{userInfo.username}}</view>
-					<view class="vipDate" v-if="userInfo.clean_time">
+					<!-- <view class="vipDate" v-if="userInfo.clean_time">
 						VIP到期日：{{userInfo.clean_time}}
-					</view>
+					</view> -->
 					<view class="img" v-if="userInfo.userId">
 						<view class="item" @click="goto('./wacoin?wacoin='+Number(userInfo.wa_coin))">
 							<image src="../../static/img/548.png" mode="widthFix"></image>

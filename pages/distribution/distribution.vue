@@ -92,9 +92,10 @@
 					數量
 				</view>
 				<view class="num">
-					<text class="add" :class="{'hs':num==pail_num}" @click="add">+</text>
-					<text>{{num}}</text>
 					<text class="add" :class="{'hs':num==1}" @click="sub">-</text>
+					<text>{{num}}</text>
+					<!-- :class="{'hs':num==pail_num}" -->
+					<text class="add" :class="{'hs':num==pail_num}" @click="add">+</text>
 				</view>
 			</view>
 			<view class="model item">
@@ -131,7 +132,7 @@
 					</view>
 				</picker> -->
 				<radio-group @change="radioChange" class="radiogroup">
-					<label class="lable" v-for="(item, index) in paylist" :key="item.name">
+					<label class="lable" v-for="(item,index) in paylist" :key="item.name">
 						<radio :value="item.type" />
 						<view>{{item.name}}</view>
 					</label>
@@ -141,7 +142,7 @@
 				<view class="head">
 					留言給配送員
 				</view>
-				<textarea v-model="message"  placeholder="告知配送員您的需求或者註意事項" />
+				<textarea v-model="message"  placeholder="告知配送員您的需求或者注意事項" />
 			</view>
 		</view>
 		<view class="coupon" v-if="false">
@@ -154,7 +155,7 @@
 				</view>
 			</view>
 		</view>
-		<view class="tile" v-if="!bodyBj">
+		<view class="tile" v-if="!bodyBj && wa_coin_config==1">
 			<view class="img">
 				<image src="/static/img/1687.png" mode="widthFix"></image>
 			</view>
@@ -241,6 +242,7 @@
 				paytype:'',
 				gasName:'',
 				gasPrice:'',
+				wa_coin_config: 0
 			};
 		},
 		methods: {
@@ -265,6 +267,7 @@
 				})
 			},
 			add() {
+				
 				if (this.pail_num > this.num) {
 					this.num++
 				}
@@ -310,10 +313,10 @@
 					if (this.bodyBj) {
 						this.freight = res.data.remnant_freight
 					}
-					// if (this.check) {
-					// 	this.freight = res.data.freight
-					// }
-					this.freight = res.data.freight
+					if (this.check) {
+						this.freight = res.data.freight
+					}
+					// this.freight = res.data.freight
 					this.userOrderCount = res.data.userOrderCount
 					if (this.user_type == 1) {
 						this.gas.push(res.data.gas_one)
@@ -324,12 +327,11 @@
 					this.gasName = this.gas[this.index2].name
 					this.gasPrice = this.gas[this.index2].price
 					this.paylist = res.data.gtpay_type
+					this.wa_coin_config = res.data.wa_coin_config
 				})
 			},
 			getDefaultAddress() {
-				let data = {
-
-				}
+				let data = {}
 				getDefaultAddress(data).then(res => {
 					if (!res.data) return
 					this.address = res.data.address
@@ -447,9 +449,10 @@
 						icon: 'none'
 					})
 				}
-				if (!this.telephone) {
+				let reg = /^(09\d{8})$/
+				if (!reg.test(this.telephone)) {
 					return uni.showToast({
-						title: '請輸入電話號碼',
+						title: '請輸入正確電話號碼',
 						icon: 'none'
 					})
 				}

@@ -27,7 +27,7 @@
 			</view>
 			<view class="vip">享有便利及更多會員回饋</view>
 			<view class="kg">重量看得見．安全又美觀．樓層不加價</view>
-			<view class="yq">餘氣可累積．預約抽紅包．分享賺代金</view>
+			<view class="yq">餘氣可累積．預約抽紅包．下單賺代金</view>
 		</view>
 
 		<view class="banner">
@@ -35,6 +35,9 @@
 				<swiper-item>
 					<image src="/static/img/517.png" mode=""></image>
 				</swiper-item>
+				<!-- <swiper-item>
+					<image src="/static/img/tyshop.png" mode="" @click="goTyShop"></image>
+				</swiper-item> -->
 				<!-- <swiper-item>
 					<image src="/static/img/0.png" mode="" @click="openF"></image>
 				</swiper-item> -->
@@ -158,6 +161,11 @@
 			
 		},
 		methods: {
+			goTyShop(){
+				uni.navigateTo({
+					url:'/pages/index/tyShop'
+				})
+			},
 			radioChange: function(evt) {
 				this.paytype = evt.detail.value 
 				this.paylist.forEach(item=>{
@@ -184,9 +192,16 @@
 				}
 				memberAdd(data).then(res=>{
 					uni.hideLoading()
-					uni.navigateTo({
-						url:'../distribution/webView?url='+res.data.pay_url
-					})
+					if(this.paytype==9){
+						uni.sendNativeEvent('openBrower', {
+							linkUrl : res.data.pay_url
+						})
+					}else{
+						uni.navigateTo({
+							url:'../distribution/webView?url='+res.data.pay_url
+						})
+					}
+					
 				})
 			},
 			openF(){
@@ -270,9 +285,9 @@
 					}
 					let myDate = new Date();
 					//获取当前小时数(0-23)
-					if(myDate.getHours()<8 || myDate.getHours()>=21){
+					if(myDate.getHours()<8 || myDate.getHours()>=20){
 						return uni.showToast({
-							title:'即時單配送時間為08：00~21：00~若已過營業時間，請改預約明日下單，謝謝',
+							title:'即時單配送時間為08：00~20：00~若已過營業時間，請改預約明日下單，謝謝',
 							icon:'none'
 						})
 					}

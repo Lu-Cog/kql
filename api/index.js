@@ -279,3 +279,11 @@ export function cancelNo(data) {
   return request.get("index/cancel",data,{noAuth : true});
 }
 
+
+/**
+ *特约店家列表
+ *
+ */
+export function guestshops(data) {
+  return request.get("index/guestshops",data,{noAuth : true});
+}
