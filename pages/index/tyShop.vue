@@ -3,14 +3,16 @@
 		<view class="home">
 			<image src="../../static/img/shop.png" mode="widthFix"></image>
 			<view class="home_c">
-				<view class="title">至以下特約店家消费，皆可使用瓦幣1：1折抵使用。</view>
+				<view class="title">至以下特約店家消费，</view>
+				<view class="title">皆可使用瓦幣1：1折抵使用。</view>
 				<view class="btn">
 					<view class="btn_item" @click="joinTy">
 						我也想加入特約店
 					</view>
-					<view class="btn_item" @click="lookMore">
+					<image src="../../static/img/hoin.png" mode="widthFix" @click="lookMore"></image>
+					<!-- <view>
 						我要看更多店家資訊
-					</view>
+					</view> -->
 				</view>
 			</view>
 		</view>
@@ -31,8 +33,13 @@
 						{{item.phone}}
 					</view>
 				</view>
-				<view class="address" @click="openAddress(item)">
-					{{item.address}}
+				<view class="foot">
+					<view class="address" @click="openAddress(item)">
+						{{item.address}}
+					</view>
+					<view class="more" @click="lookMore">
+						更多..
+					</view>
 				</view>
 			</view>
 			
@@ -116,18 +123,22 @@
 
 			.home_c {
 				position: absolute;
-				bottom: 50rpx;
+				bottom: 30rpx;
 				left: 90rpx;
 				right: 90rpx;
 
 				.title {
-					padding: 30rpx;
+					margin-bottom: 10rpx;
+					text-align: center;
+					&:nth-child(2){
+						margin-bottom: 20rpx;
+					}
 				}
 
 				.btn {
 					display: flex;
 					align-items: center;
-					justify-content: space-between;
+					justify-content: space-around;
 
 					.btn_item {
 						border-radius: 60rpx;
@@ -137,6 +148,10 @@
 						width: 46%;
 						font-size: 28rpx;
 						text-align: center;
+					}
+					image{
+						width: 100rpx;
+						height: 100rpx;
 					}
 				}
 			}
@@ -182,10 +197,22 @@
 						white-space: nowrap;
 					}
 				}
-
-				.address {
-					font-size: 28rpx;
+				.foot{
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					.address {
+						font-size: 28rpx;
+					}
+					.more{
+						font-size: 26rpx;
+						color: #FF9EC3;
+						width: 100rpx;
+						white-space: nowrap;
+						text-align: right;
+					}
 				}
+				
 			}
 			.no{
 				margin-top: 200rpx;
