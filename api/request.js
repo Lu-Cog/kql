@@ -9,13 +9,13 @@ import Cache from "@/utils/cache.js"
 /**
  * 发送请求
  */
-function baseRequest(url, method, data, head, {
+function baseRequest(url, method, data,  {
 	noAuth = false,
 	noVerify = false
 }) {
 	// let Url = 'https://kql.iqweb.net',
 	let Url = 'http://kql_dev.iqweb.net',
-		header = head || HEADER;
+		header =  HEADER;
 
 	if (!noAuth) {
 		//登录过期自动登录
@@ -71,7 +71,7 @@ function baseRequest(url, method, data, head, {
 const request = {};
 
 ['options', 'get', 'post', 'put', 'head', 'delete', 'trace', 'connect'].forEach((method) => {
-	request[method] = (api, data,head, opt) => baseRequest(api, method, data,head, opt || {})
+	request[method] = (api, data, opt) => baseRequest(api, method, data, opt || {})
 });
 
 

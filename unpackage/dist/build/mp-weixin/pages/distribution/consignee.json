@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "常用收貨人資訊",
-  "enablePullDownRefresh": false,
-  "navigationStyle": "custom",
-  "usingComponents": {
-    "header": "/components/header/header"
-  }
-}

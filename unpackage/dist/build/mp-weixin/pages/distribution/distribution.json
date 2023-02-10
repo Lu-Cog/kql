@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "配送服務",
-  "enablePullDownRefresh": false,
-  "usingComponents": {
-    "h-time-alert": "/components/h-time-alert/h-time-alert"
-  }
-}
