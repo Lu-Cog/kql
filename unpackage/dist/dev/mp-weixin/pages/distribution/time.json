@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "預約時間",
-  "enablePullDownRefresh": false,
-  "usingComponents": {
-    "ren-calendar": "/components/ren-calendar/ren-calendar",
-    "h-time-alert": "/components/h-time-alert/h-time-alert"
-  }
-}

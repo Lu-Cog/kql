@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "我的會員",
-  "enablePullDownRefresh": false,
-  "navigationStyle": "custom",
-  "usingComponents": {
-    "header": "/components/header/header"
-  }
-}

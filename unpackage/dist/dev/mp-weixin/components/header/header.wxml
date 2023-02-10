@@ -1,1 +1,0 @@
-<view class="header"><view class="top"></view><view class="head"><image src="../../static/img/s1.png" mode="widthFix" data-event-opts="{{[['tap',[['backTo']]]]}}" bindtap="__e"></image><view>{{title}}</view><image src="{{image}}" mode="widthFix" data-event-opts="{{[['tap',[['goto']]]]}}" bindtap="__e"></image></view></view>
