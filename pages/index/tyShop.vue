@@ -37,7 +37,7 @@
 					<view class="address" @click="openAddress(item)">
 						{{item.address}}
 					</view>
-					<view class="more" @click="lookMore">
+					<view v-if="item.hoin_status==1" class="more" @click="lookMore">
 						更多..
 					</view>
 				</view>
