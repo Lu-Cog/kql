@@ -95,7 +95,7 @@
 					<text class="add" :class="{'hs':num==1}" @click="sub">-</text>
 					<text>{{num}}</text>
 					<!-- :class="{'hs':num==pail_num}" -->
-					<text class="add" :class="{'hs':num==pail_num}" @click="add">+</text>
+					<text class="add" @click="add">+</text>
 				</view>
 			</view>
 			<view class="model item">

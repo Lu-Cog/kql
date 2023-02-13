@@ -38,6 +38,11 @@
 				<text>我的訂單</text>
 				<image src="../../static/img/1.png" mode="widthFix"></image>
 			</view>
+			<view class="item" @click="goto('./deposit')">
+				<image src="../../static/img/2053.png" mode=" "></image>
+				<text>我的押金</text>
+				<image src="../../static/img/1.png" mode="widthFix"></image>
+			</view>
 			<view class="item" v-if="userInfo.makecode" @click="goto('./myMembers')">
 				<image src="../../static/img/2049.png" mode=" "></image>
 				<text>我的會員</text>

@@ -75,7 +75,13 @@
 		<view class="total">
 			合計<text>${{money}}元</text>
 		</view>
-		
+		<view class="deposit">
+			<text>壓桶押金({{data.gas.name}})X{{Number(data.pail_num)}}</text>
+			<text>${{money}}元</text>
+		</view>
+		<view class="collect">
+			*配送員上門收現金
+		</view>
 		<view class="button">
 			<button type="default" @click="goto()">確認訂單</button>
 		</view>
@@ -213,7 +219,7 @@
 	}
 
 	.total {
-		margin: 10rpx 40rpx 160rpx;
+		margin: 10rpx 40rpx 10rpx;
 		text-align: right;
 		font-weight: 700;
 
@@ -221,7 +227,19 @@
 			color: red;
 		}
 	}
-
+	.deposit{
+		margin: 20rpx 40rpx;
+		display: flex;
+		justify-content: space-between;
+		color: #FF9EC3;
+		font-size: 30rpx;
+	}
+	.collect{
+		margin: 10rpx 40rpx 10rpx;
+		text-align: right;
+		color: #FF9EC3;
+		font-size: 30rpx;
+	}
 	.button {
 		position: absolute;
 		bottom: 30rpx;

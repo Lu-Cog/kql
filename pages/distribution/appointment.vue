@@ -77,6 +77,13 @@
 				<view class="total">
 					合計<text>${{Number(orderInfo.pay_price)}}元</text>
 				</view>
+				<view class="deposit">
+					<text>壓桶押金({{orderInfo.gas_model}})X{{Number(orderInfo.pail_num)}}</text>
+					<text>${{Number(orderInfo.pay_price)}}元</text>
+				</view>
+				<view class="collect">
+					*配送員上門收現金
+				</view>
 			</view>
 		</view>
 		<view class="tip">
@@ -364,6 +371,17 @@
 				text {
 					color: red;
 				}
+			}
+			.deposit{
+				display: flex;
+				justify-content: space-between;
+				color: red;
+				font-size: 30rpx;
+			}
+			.collect{
+				text-align: right;
+				color: red;
+				font-size: 30rpx;
 			}
 		}
 	}
