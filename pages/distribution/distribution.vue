@@ -242,7 +242,7 @@
 				paytype:'',
 				gasName:'',
 				gasPrice:'',
-				wa_coin_config: 0
+				wa_coin_config: 0,
 			};
 		},
 		methods: {
@@ -267,10 +267,9 @@
 				})
 			},
 			add() {
-				
-				if (this.pail_num > this.num) {
-					this.num++
-				}
+				this.num++
+				// if (this.pail_num > this.num) {
+				// }
 			},
 			sub() {
 				if (this.num > 1) {
@@ -319,10 +318,9 @@
 					// this.freight = res.data.freight
 					this.userOrderCount = res.data.userOrderCount
 					if (this.user_type == 1) {
-						this.gas.push(res.data.gas_one)
+						this.gas = res.data.gas_all
 					} else if (this.user_type == 2) {
-						this.gas.push(res.data.gas_one)
-						this.gas.push(res.data.gas_two)
+						this.gas = res.data.gas_all.reverse()
 					}
 					this.gasName = this.gas[this.index2].name
 					this.gasPrice = this.gas[this.index2].price

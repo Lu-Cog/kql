@@ -77,11 +77,11 @@
 				<view class="total">
 					合計<text>${{Number(orderInfo.pay_price)}}元</text>
 				</view>
-				<view class="deposit">
-					<text>壓桶押金({{orderInfo.gas_model}})X{{Number(orderInfo.pail_num)}}</text>
-					<text>${{Number(orderInfo.pay_price)}}元</text>
+				<view class="deposit" v-if="orderInfo.y_pail_num">
+					<text>{{orderInfo.y_str}}</text>
+					<text>${{Number(orderInfo.y_price)}}元</text>
 				</view>
-				<view class="collect">
+				<view class="collect" v-if="orderInfo.y_pail_num">
 					*配送員上門收現金
 				</view>
 			</view>

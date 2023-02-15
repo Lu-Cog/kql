@@ -18,7 +18,7 @@
 			console.log('App Show')
 			try {
 				// var arg = JSON.parse(plus.runtime.arguments);
-				var arg = {"token":"ac06859a8746b46c15e67004f2466d3e"}
+				var arg = {"token":"ab10379bc4fb651b5ffe3bd556c92abd"}
 				if(arg.type==11){
 					uni.navigateTo({
 						url:'/pages/user/memberBar'

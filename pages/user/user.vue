@@ -38,8 +38,8 @@
 				<text>我的訂單</text>
 				<image src="../../static/img/1.png" mode="widthFix"></image>
 			</view>
-			<view class="item" @click="goto('./deposit')">
-				<image src="../../static/img/2053.png" mode=" "></image>
+			<view class="item" @click="goto('./deposit?yPrice='+userInfo.y_price)">
+				<image src="../../static/img/yjin.png" mode=" "></image>
 				<text>我的押金</text>
 				<image src="../../static/img/1.png" mode="widthFix"></image>
 			</view>

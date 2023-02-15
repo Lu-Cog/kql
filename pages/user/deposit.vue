@@ -2,25 +2,25 @@
 	<view>
 		<view class="header">
 			<view class="head">
-				<image src="/static/img/548.png" mode="widthFix"></image>
+				<image src="/static/img/yjin.png" mode="widthFix"></image>
 			</view>
 			
 		</view>
 		<view class="num">
-			<text>{{wacoin?wacoin:0}}</text>
+			<text>{{yPrice?yPrice:0}}</text>
 		</view>
 		<view class="definite">
 			<view class="title">
 				押桶明細：
 			</view>
 			<view class="content">
-				<view class="content_item" v-for="(item,index) in waCoinList" :key='index'>
+				<view class="content_item" v-for="(item,index) in yPriceList" :key='index'>
 					<view class="item_title">
-						{{item.source}}
+						{{item.content}}
 					</view>
 					<view class="item_bottom">
 						<text>{{item.add_time}}</text>
-						<text>{{item.wa_coin}}</text>
+						<text>{{item.price}}</text>
 					</view>
 				</view>
 				
@@ -31,7 +31,7 @@
 </template>
 
 <script>
-	import {waCoinList} from '@/api/index.js'
+	import {yPriceList} from '@/api/index.js'
 	import TabBar from '../../components/jinjie-tabBar/jinjie-tabBar.vue'
 	export default {
 		components: {
@@ -39,20 +39,20 @@
 		},
 		data() {
 			return {
-				waCoinList:[],
-				wacoin:''
+				yPriceList:[],
+				yPrice:''
 			};
 		},
 		onLoad(option) {
-			this.wacoin = option.wacoin
-			this.getWaCoinList()
+			this.yPrice = option.yPrice
+			this.getyPriceList()
 		},
 		methods:{
-			getWaCoinList(){
+			getyPriceList(){
 				let data = {
 				}
-				waCoinList(data).then(res=>{
-					this.waCoinList = res.data
+				yPriceList(data).then(res=>{
+					this.yPriceList = res.data
 				})
 			}
 		}

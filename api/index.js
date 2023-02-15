@@ -111,7 +111,21 @@ export function remnantlist(data) {
 export function waCoinList(data) {
   return request.get("index/wa_coin_list",data,{noAuth : true});
 }
+/**
+ * 押金
+ *
+ */
+export function yPriceList(data) {
+  return request.get("index/goldPressingList",data,{noAuth : true});
+}
 
+/**
+ * 计算押金
+ *
+ */
+export function goldPressing(data) {
+  return request.get("order/gold_pressing",data,{noAuth : true});
+}
 /**
  * 贈送瓦幣
  *

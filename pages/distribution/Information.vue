@@ -75,11 +75,11 @@
 		<view class="total">
 			合計<text>${{money}}元</text>
 		</view>
-		<view class="deposit">
-			<text>壓桶押金({{data.gas.name}})X{{Number(data.pail_num)}}</text>
-			<text>${{money}}元</text>
+		<view class="deposit" v-if="goldData.y_pail_num">
+			<text>{{goldData.y_title}}</text>
+			<text>${{goldData.y_price}}元</text>
 		</view>
-		<view class="collect">
+		<view class="collect" v-if="goldData.y_pail_num">
 			*配送員上門收現金
 		</view>
 		<view class="button">
@@ -93,7 +93,8 @@
 	import {
 		orderInfo,
 		orderCreate,
-		gtpay
+		gtpay,
+		goldPressing
 	} from "@/api/index.js"
 	export default {
 		data() {
@@ -105,7 +106,8 @@
 				},
 				remnant: '',
 				payType:1,
-				money:''
+				money:'',
+				goldData:{}
 			};
 		},
 		onLoad(option) {
@@ -126,10 +128,19 @@
 			} else {
 				this.remnant = 20
 			}
+			this.goldPressing()
 		},
 		
 		methods: {
-			
+			goldPressing(){
+				let data= {
+					gas_id:this.data.gas.gas_id,
+					pail_num : this.data.pail_num
+				}
+				goldPressing(data).then(res=>{
+					this.goldData = res.data
+				})
+			},
 			radioChange: function(evt) {
 				this.payType = evt.detail.value
 			},
