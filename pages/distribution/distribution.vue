@@ -589,8 +589,10 @@
 			line-height: 80rpx;
 			font-size: 50rpx;
 			color: #505050;
+			&:nth-child(2){
+				width: 140rpx;
+			}
 		}
-
 		.add {
 			border: 1px solid #A3A3A3;
 			border-radius: 15rpx;
