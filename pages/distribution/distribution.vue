@@ -94,8 +94,7 @@
 				<view class="num">
 					<text class="add" :class="{'hs':num==1}" @click="sub">-</text>
 					<text>{{num}}</text>
-					<!-- :class="{'hs':num==pail_num}" -->
-					<text class="add" :class="{'hs':num==pail_num}" @click="add">+</text>
+					<text class="add" :class="{'hs':num==99}" @click="add">+</text>
 				</view>
 			</view>
 			<view class="model item">
@@ -242,7 +241,7 @@
 				paytype:'',
 				gasName:'',
 				gasPrice:'',
-				wa_coin_config: 0
+				wa_coin_config: 0,
 			};
 		},
 		methods: {
@@ -267,10 +266,11 @@
 				})
 			},
 			add() {
-				
-				if (this.pail_num > this.num) {
+				if (this.num < 100) {
 					this.num++
 				}
+				// if (this.pail_num > this.num) {
+				// }
 			},
 			sub() {
 				if (this.num > 1) {
@@ -318,12 +318,12 @@
 					}
 					// this.freight = res.data.freight
 					this.userOrderCount = res.data.userOrderCount
-					if (this.user_type == 1) {
-						this.gas.push(res.data.gas_one)
-					} else if (this.user_type == 2) {
-						this.gas.push(res.data.gas_one)
-						this.gas.push(res.data.gas_two)
-					}
+					this.gas = res.data.gas_all
+					// if (this.user_type == 1) {
+					// 	this.gas = res.data.gas_all
+					// } else if (this.user_type == 2) {
+					// 	.reverse()
+					// }
 					this.gasName = this.gas[this.index2].name
 					this.gasPrice = this.gas[this.index2].price
 					this.paylist = res.data.gtpay_type
@@ -591,8 +591,10 @@
 			line-height: 80rpx;
 			font-size: 50rpx;
 			color: #505050;
+			&:nth-child(2){
+				width: 140rpx;
+			}
 		}
-
 		.add {
 			border: 1px solid #A3A3A3;
 			border-radius: 15rpx;

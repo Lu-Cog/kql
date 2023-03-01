@@ -301,6 +301,15 @@
             }
             
         }
+        ,{
+            "path" : "pages/user/deposit",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的押金",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTitleText": "扛氣來",

@@ -75,7 +75,13 @@
 		<view class="total">
 			合計<text>${{money}}元</text>
 		</view>
-		
+		<view class="deposit" v-if="goldData.y_pail_num">
+			<text>{{goldData.y_title}}</text>
+			<text>${{goldData.y_price}}元</text>
+		</view>
+		<view class="collect" v-if="goldData.y_pail_num">
+			*配送員上門收現金
+		</view>
 		<view class="button">
 			<button type="default" @click="goto()">確認訂單</button>
 		</view>
@@ -87,7 +93,8 @@
 	import {
 		orderInfo,
 		orderCreate,
-		gtpay
+		gtpay,
+		goldPressing
 	} from "@/api/index.js"
 	export default {
 		data() {
@@ -99,7 +106,8 @@
 				},
 				remnant: '',
 				payType:1,
-				money:''
+				money:'',
+				goldData:{}
 			};
 		},
 		onLoad(option) {
@@ -120,10 +128,19 @@
 			} else {
 				this.remnant = 20
 			}
+			this.goldPressing()
 		},
 		
 		methods: {
-			
+			goldPressing(){
+				let data= {
+					gas_id:this.data.gas.gas_id,
+					pail_num : this.data.pail_num
+				}
+				goldPressing(data).then(res=>{
+					this.goldData = res.data
+				})
+			},
 			radioChange: function(evt) {
 				this.payType = evt.detail.value
 			},
@@ -213,7 +230,7 @@
 	}
 
 	.total {
-		margin: 10rpx 40rpx 160rpx;
+		margin: 10rpx 40rpx 10rpx;
 		text-align: right;
 		font-weight: 700;
 
@@ -221,7 +238,19 @@
 			color: red;
 		}
 	}
-
+	.deposit{
+		margin: 20rpx 40rpx;
+		display: flex;
+		justify-content: space-between;
+		color: #FF9EC3;
+		font-size: 30rpx;
+	}
+	.collect{
+		margin: 10rpx 40rpx 10rpx;
+		text-align: right;
+		color: #FF9EC3;
+		font-size: 30rpx;
+	}
 	.button {
 		position: absolute;
 		bottom: 30rpx;

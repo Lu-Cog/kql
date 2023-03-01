@@ -71,9 +71,9 @@
 			</view>
 			<image src="../../static/img/cha.png" mode="widthFix" @click="changeMask()"></image>
 		</view>
-		<view v-if="orderInfo.red_packet_status==0" class="fab shake" @click="gotoRed(orderInfo.order_no)">
+		<!-- <view v-if="orderInfo.red_packet_status==0" class="fab shake" @click="gotoRed(orderInfo.order_no)">
 			<image src="../../static/img/2055.png" mode="widthFix"></image>
-		</view>
+		</view> -->
 	</view>
 </template>
 
