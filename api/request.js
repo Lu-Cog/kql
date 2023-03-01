@@ -13,8 +13,8 @@ function baseRequest(url, method, data,  {
 	noAuth = false,
 	noVerify = false
 }) {
-	// let Url = 'https://kql.iqweb.net',
-	let Url = 'http://kql_dev.iqweb.net',
+	let Url = 'https://kql.iqweb.net',
+	// let Url = 'http://kql_dev.iqweb.net',
 		header =  HEADER;
 
 	if (!noAuth) {
