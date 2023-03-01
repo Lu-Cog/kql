@@ -94,8 +94,7 @@
 				<view class="num">
 					<text class="add" :class="{'hs':num==1}" @click="sub">-</text>
 					<text>{{num}}</text>
-					<!-- :class="{'hs':num==pail_num}" -->
-					<text class="add" @click="add">+</text>
+					<text class="add" :class="{'hs':num==99}" @click="add">+</text>
 				</view>
 			</view>
 			<view class="model item">
@@ -267,7 +266,9 @@
 				})
 			},
 			add() {
-				this.num++
+				if (this.num < 100) {
+					this.num++
+				}
 				// if (this.pail_num > this.num) {
 				// }
 			},
@@ -317,11 +318,12 @@
 					}
 					// this.freight = res.data.freight
 					this.userOrderCount = res.data.userOrderCount
-					if (this.user_type == 1) {
-						this.gas = res.data.gas_all
-					} else if (this.user_type == 2) {
-						this.gas = res.data.gas_all.reverse()
-					}
+					this.gas = res.data.gas_all
+					// if (this.user_type == 1) {
+					// 	this.gas = res.data.gas_all
+					// } else if (this.user_type == 2) {
+					// 	.reverse()
+					// }
 					this.gasName = this.gas[this.index2].name
 					this.gasPrice = this.gas[this.index2].price
 					this.paylist = res.data.gtpay_type
