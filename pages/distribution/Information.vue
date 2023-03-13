@@ -75,11 +75,11 @@
 		<view class="total">
 			合計<text>${{money}}元</text>
 		</view>
-		<view class="deposit" v-if="goldData.y_pail_num">
+		<view class="deposit" v-if="goldData.y_pail_num>0">
 			<text>{{goldData.y_title}}</text>
 			<text>${{goldData.y_price}}元</text>
 		</view>
-		<view class="collect" v-if="goldData.y_pail_num">
+		<view class="collect" v-if="goldData.y_pail_num>0">
 			*配送員上門收現金
 		</view>
 		<view class="button">

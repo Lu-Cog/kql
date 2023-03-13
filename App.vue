@@ -17,8 +17,8 @@
 			// this.globalData.shop_name = option.referrerInfo.extraData.shop_name
 			console.log('App Show')
 			try {
-				var arg = JSON.parse(plus.runtime.arguments);
-				// var arg = {"token":"4b3dfd77e1ac163d6d0255458a5dccfb"}
+				// var arg = JSON.parse(plus.runtime.arguments);
+				var arg = {"token":"0f187dbb04e35430c95adbebcfb2f1e3"}
 				if(arg.type==11){
 					uni.navigateTo({
 						url:'/pages/user/memberBar'
